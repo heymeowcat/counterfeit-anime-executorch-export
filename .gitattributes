@@ -1,0 +1,10 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Shell scripts always LF
+*.sh text eol=lf
+
+# Binary assets (never commit the multi-GB weights, but be explicit for safety)
+*.pte binary
+*.safetensors binary
+*.png binary
